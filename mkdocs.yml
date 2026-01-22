@@ -71,7 +71,8 @@ nav:
       - Computing: 
         - Virtual Marchines: cloud/azure/computing.md
   - Redes: redes/index.md
-  - Sistemas: sistemas/index.md
+  - Linux: linux/index.md
+  - Windows: windows/index.md
   - Blog:
      - blog/index.md
      - blog/tags.md
