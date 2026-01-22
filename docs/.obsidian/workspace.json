@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "windows/index.md",
+                "file": "cloud/terraform/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "windows/index.md",
+                "file": "cloud/terraform/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "windows/index.md",
+                "file": "cloud/terraform/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "windows/index.md",
+                "file": "cloud/terraform/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -185,8 +185,9 @@
   },
   "active": "e310d338a1642179",
   "lastOpenFiles": [
-    "redes/index.md",
+    "index.md",
     "windows/index.md",
+    "redes/index.md",
     "linux/index.md",
     "windows",
     "cloud/index.md",
@@ -203,7 +204,6 @@
     "img/Pasted image 20260120185255.png",
     "img",
     "cloud/azure/computing/Virtual Machines.md",
-    "index.md",
     "tags.md"
   ]
 }
