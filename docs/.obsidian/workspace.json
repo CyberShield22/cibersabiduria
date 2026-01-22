@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cloud/terraform/index.md",
+                "file": "redes/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cloud/terraform/index.md",
+                "file": "redes/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cloud/terraform/index.md",
+                "file": "redes/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cloud/terraform/index.md",
+                "file": "redes/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -185,19 +185,19 @@
   },
   "active": "e310d338a1642179",
   "lastOpenFiles": [
-    "cloud/terraform/assets/providers_cloud.png",
+    "cloud/index.md",
+    "cloud/azure/computing.md",
     "cloud/terraform/index.md",
+    "cloud/terraform/assets/providers_cloud.png",
     "cloud/terraform/assets/Pasted image 20260120190325.png",
     "cloud/terraform/assets",
     "cloud/terraform/Pasted image 20260120185403.png",
     "cloud/terraform/assets/Pasted image 20260120190224.png",
     "cloud/terraform/assets/Pasted image 20260120190215.png",
-    "cloud/azure/computing.md",
     "cloud/azure/assets/Pasted image 20260120190228.png",
     "cloud/azure/assets",
     "img/Pasted image 20260120185255.png",
     "img",
-    "cloud/index.md",
     "cloud/azure/computing/Virtual Machines.md",
     "redes/index.md",
     "index.md",
