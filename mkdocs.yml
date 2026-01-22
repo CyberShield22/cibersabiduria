@@ -30,12 +30,15 @@ plugins:
       date_from_meta:
         as_creation: date.created
         as_update: date.updated
+  - social
 
 extra:
   social:
-    - icon: fontawesome/brands/mastodon
-      name: squidfunk on Mastodon
-      link: https://fosstodon.org/@squidfunk
+    - icon: fontawesome/brands/github
+      link: https://github.com/CyberShield22
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/david-botella-nicol%C3%A1s-1735992b2/
+  generator: false
 
 hooks:
   - hooks/socialmedia.py
