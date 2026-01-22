@@ -63,7 +63,8 @@ markdown_extensions:
 
 nav:
   - Inicio: index.md
-  - Cloud: cloud/index.md
+  - Cloud:     
+    - Visión general: cloud/index.md
     - Terraform:
       - Introducción: cloud/terraform/index.md
       - Instalación: cloud/terraform/install.md
