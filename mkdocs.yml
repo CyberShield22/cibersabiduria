@@ -11,21 +11,17 @@ theme:
     - navigation.tabs
     - navigation.expand
   palette:
-    # Modo claro
-    - scheme: default
-      primary: indigo
-      accent: cyan
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       toggle:
         icon: material/weather-night
-        name: Cambiar a modo oscuro
+        name: Modo oscuro
 
-    # Modo oscuro
-    - scheme: slate
-      primary: indigo
-      accent: cyan
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       toggle:
         icon: material/weather-sunny
-        name: Cambiar a modo claro
+        name: Modo claro
 
 plugins:
   - search
