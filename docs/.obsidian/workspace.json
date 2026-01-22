@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 265.5
   },
   "right": {
     "id": "5b15f4905cb8dbfa",
@@ -185,6 +185,7 @@
   },
   "active": "e310d338a1642179",
   "lastOpenFiles": [
+    "cloud/terraform/assets/providers_cloud.png.~tmp",
     "index.md",
     "windows/index.md",
     "redes/index.md",
