@@ -67,6 +67,7 @@ nav:
     - Visión general: cloud/index.md
     - Terraform:
       - Introducción: cloud/terraform/index.md
+      - Instalación: cloud/terraform/install.md
     - Azure: 
       - Computing: 
         - Virtual Marchines: cloud/azure/computing.md
