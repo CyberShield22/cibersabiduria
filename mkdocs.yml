@@ -65,12 +65,16 @@ nav:
   - Inicio: index.md
   - Cloud:     
     - Visión general: cloud/index.md
-    - Terraform:
-      - Introducción: cloud/terraform/index.md
-      - Instalación: cloud/terraform/install.md
+    # - Terraform:
+    #   - Introducción: cloud/terraform/intro.md
+    #   - Instalación: cloud/terraform/install.md
     - Azure: 
       - Computing: 
         - Virtual Marchines: cloud/azure/computing.md
+    # - AWS:
+    #   - IAM: cloud/aws/iam.md
+    # - Google Cloud Platform:
+    #   - Computer Engine: cloud/gcp/computers_engines.md
   - Redes: redes/index.md
   - Linux: linux/index.md
   - Windows: windows/index.md
