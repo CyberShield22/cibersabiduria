@@ -10,6 +10,7 @@ theme:
     - navigation.sections
     - navigation.tabs
     - navigation.expand
+    - navigation.footer
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
