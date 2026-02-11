@@ -12,6 +12,7 @@ Un espacio donde la teoría se convierte en laboratorio.
 Este proyecto nace como un repositorio técnico donde se recopilan apuntes, configuraciones, guías paso a paso y documentación real utilizada en entornos de laboratorio y producción.
 
 Está orientado a:
+
 - Estudiantes de informática
 - Administradores de sistemas
 - Profesionales IT
