@@ -79,7 +79,7 @@ nav:
   - Redes: redes/index.md
   - Linux: linux/index.md
   - Windows: windows/index.md
-  - Ciberseguridad:
+  - Ciberseguridad: ciberseguridad/index.md
   - Blog:
      - blog/index.md
      - blog/tags.md
