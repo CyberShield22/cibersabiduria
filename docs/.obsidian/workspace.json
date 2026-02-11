@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cloud/gcp/computers_engines.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "computers_engines"
+              "title": "index"
             }
           }
         ]
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
+              "title": "Files"
             }
           },
           {
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 265.5
+    "width": 224.5
   },
   "right": {
     "id": "5b15f4905cb8dbfa",
@@ -174,33 +174,37 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "bases:Crear nueva base": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
     }
   },
   "active": "e310d338a1642179",
   "lastOpenFiles": [
-    "cloud/aws/iam.md",
+    "ciberseguridad/index.md",
+    "linux/index.md",
+    "cloud/index.md",
+    "ciberseguridad",
+    "windows/index.md",
+    "blog/index.md",
+    "blog/tags.md",
     "cloud/gcp/computers_engines.md",
+    "cloud/aws/iam.md",
     "cloud/terraform/intro.md",
     "cloud/aws/iam/Sin título.md",
     "cloud/aws/iam",
     "cloud/gcp",
     "cloud/aws",
-    "cloud/index.md",
-    "linux/index.md",
     "cloud/terraform/install.md",
     "assets.md",
     "cloud/terraform/assets/hashicorp.png",
     "cloud/terraform/assets/Pasted image 20260122184210.png",
     "cloud/terraform/assets/providers_cloud.png.~tmp",
     "index.md",
-    "windows/index.md",
     "redes/index.md",
     "windows",
     "cloud/azure/computing.md",

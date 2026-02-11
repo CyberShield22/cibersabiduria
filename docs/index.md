@@ -1,15 +1,21 @@
-# Bienvenido a Cibersabiduría
-- 🌩️ **Cloud**
-  
-  Aprende sobre AWS, Azure, Terraform y cloud computing.  
-  [:octicons-arrow-right-24: Entrar](cloud/)
+# 🔐 Apuntes prácticos de Ciberseguridad, Cloud y Sistemas
+Documentación técnica clara, estructurada y enfocada a la práctica real sobre **Cloud, Redes, Linux, Windows y Ciberseguridad**.  
+Un espacio donde la teoría se convierte en laboratorio.
 
-- 🌐 **Redes**
-  
-  TCP/IP, firewalls, routing, switching.  
-  [:octicons-arrow-right-24: Entrar](redes/)
+📚 Aprende  
+🛠️ Practica  
+🚀 Mejora tus habilidades IT
 
-- 🖥️ **Sistemas**
-  
-  Linux, Windows, administración de sistemas.  
-  [:octicons-arrow-right-24: Entrar](sistemas/)
+---
+## 📖 Sobre este sitio
+
+Este proyecto nace como un repositorio técnico donde se recopilan apuntes, configuraciones, guías paso a paso y documentación real utilizada en entornos de laboratorio y producción.
+
+Está orientado a:
+- Estudiantes de informática
+- Administradores de sistemas
+- Profesionales IT
+- Personas que se preparan certificaciones
+- Entusiastas de la ciberseguridad
+
+El contenido está organizado por áreas clave del mundo de la informática, cubriendo desde fundamentos hasta configuraciones avanzadas.
