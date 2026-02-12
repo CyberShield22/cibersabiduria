@@ -64,11 +64,12 @@ markdown_extensions:
 
 nav:
   - Inicio: index.md
+  - Linux: linux/index.md
+  - Windows: windows/index.md
+  - Redes: redes/index.md
   - Cloud:     
     - Visión general: cloud/index.md
-    # - Terraform:
-    #   - Introducción: cloud/terraform/intro.md
-    #   - Instalación: cloud/terraform/install.md
+    - Fundamentos de la nube: cloud/fundamentals.md
     - Azure: 
       - Computing: 
         - Virtual Marchines: cloud/azure/computing.md
@@ -76,9 +77,9 @@ nav:
     #   - IAM: cloud/aws/iam.md
     # - Google Cloud Platform:
     #   - Computer Engine: cloud/gcp/computers_engines.md
-  - Redes: redes/index.md
-  - Linux: linux/index.md
-  - Windows: windows/index.md
+    # - Terraform:
+    #   - Introducción: cloud/terraform/intro.md
+    #   - Instalación: cloud/terraform/install.md
   - Ciberseguridad: ciberseguridad/index.md
   - Blog:
      - blog/index.md
