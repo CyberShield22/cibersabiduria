@@ -8,7 +8,7 @@ theme:
   features:
     - navigation.indexes
     - navigation.sections
-    - navigation.tabs
+#    - navigation.tabs
     - navigation.expand
     - navigation.footer
     - navigation.top
@@ -64,6 +64,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+      toc_depth: 4
 
 nav:
   - Inicio: index.md
