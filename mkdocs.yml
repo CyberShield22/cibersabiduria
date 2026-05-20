@@ -11,6 +11,9 @@ theme:
     - navigation.tabs
     - navigation.expand
     - navigation.footer
+    - navigation.top
+    - toc.follow
+    - content.code.copy
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
