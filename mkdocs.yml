@@ -8,12 +8,15 @@ theme:
   features:
     - navigation.indexes
     - navigation.sections
-#    - navigation.tabs
+    - navigation.tabs
     - navigation.expand
     - navigation.footer
     - navigation.top
     - toc.follow
+    - toc.integrate
     - content.code.copy
+    - content.tabs.link
+    - content.code.annotate
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
