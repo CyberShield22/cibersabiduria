@@ -22,3 +22,100 @@ A hipervisor es un sistema operativo que ejecuta un máquina virtual. La máquin
 A sistema operativo de biblioteca (libOS) es aquel en el que los servicios que proporciona un sistema operativo típico, como la red, se proporcionan en forma de bibliotecas y compuesto con una única aplicación y código de configuración para construir un unikernel: a especializado (solo se extraen de las bibliotecas los fragmentos de código absolutamente necesarios y se unen entre sí ), espacio de dirección única, imagen de máquina que se puede implementar en entornos integrados o en la nube.
 
 El código del sistema operativo y el código de la aplicación no se ejecutan por separado dominios de protección (solo hay una única aplicación ejecutándose, al menos conceptualmente, por lo que no hay necesidad de evitar interferencias entre aplicaciones) y se accede a los servicios del sistema operativo mediante simples llamadas a la biblioteca (potencialmente inlining ellos basados en umbrales del compilador), sin la sobrecarga habitual de cambios de contexto, de manera similar a los sistemas operativos integrados y en tiempo real. Esta sobrecarga no es despreciable: al coste directo del cambio de modo hay que añadir la contaminación indirecta de importantes estructuras de procesador (como Cachés de CPU, el canalización de instrucciones, y así sucesivamente), lo que afecta tanto al rendimiento en modo usuario como en modo kernel.
+
+## Historia
+Los sistemas operativos no siempre existieron como los conocemos hoy. Su evolución ha estado directamente ligada al crecimiento del hardware, la necesidad de automatización y el acceso compartido a los recursos de computación.
+
+---
+### Los primeros sistemas (1940–1950)
+
+Las primeras computadoras de finales de los años 40 y 50 no disponían de sistemas operativos.
+
+La programación se realizaba de forma directa sobre la máquina mediante:
+
+- Lenguaje máquina
+- Tarjetas perforadas
+- Paneles de conexión física (plugboards)
+
+En este contexto, no existían lenguajes de programación de alto nivel ni abstracciones. El control del sistema era completamente manual, lo que hacía que cada ejecución fuera costosa y lenta.
+
+---
+
+### La era de los mainframes y los primeros sistemas de control
+
+Con la llegada del **transistor en los años 50**, comenzaron a aparecer los primeros mainframes.
+
+Aunque todavía requerían operadores humanos especializados, empezaron a incluir sistemas rudimentarios encargados de automatizar tareas como:
+
+- Planificación de trabajos (job scheduling)
+- Gestión básica de entrada/salida
+- Ejecución secuencial de programas
+
+Entre los sistemas más representativos de esta etapa destacan:
+
+- **FMS (Fortran Monitor System)**
+- **IBSYS**
+
+Estos sistemas no eran sistemas operativos modernos, pero sentaron las bases de lo que vendría después.
+
+---
+
+### IBM System/360 y el nacimiento de la multiprogramación
+
+En la década de 1960, IBM introdujo la familia **System/360**, uno de los hitos más importantes en la historia de la computación.
+
+Todos los modelos ejecutaban un sistema operativo común:
+
+- **OS/360**
+
+Este sistema estaba escrito principalmente en lenguaje ensamblador y llegó a tener millones de líneas de código, lo que lo hacía extremadamente complejo.
+
+A pesar de sus problemas, introdujo avances fundamentales como la **multiprogramación**, que permitía:
+
+- Ejecutar varios programas en memoria al mismo tiempo
+- Aprovechar la CPU mientras otros procesos esperaban operaciones de entrada/salida
+
+Esto obligó a introducir mecanismos como:
+
+- Gestión de memoria por particiones
+- Protección entre procesos
+
+---
+
+### Tiempo compartido y MULTICS
+
+En paralelo, comenzaron a utilizarse terminales como las teleimpresoras, lo que permitió el acceso simultáneo de múltiples usuarios a un mismo sistema.
+
+El sistema **MULTICS** fue uno de los primeros intentos de construir un sistema multiusuario a gran escala, con el objetivo de dar servicio a cientos de usuarios concurrentes.
+
+Aunque su adopción fue limitada, su diseño influyó profundamente en la evolución de los sistemas modernos y es considerado un precursor conceptual de la **computación en la nube**.
+
+---
+
+### UNIX: el punto de inflexión
+
+El sistema operativo **UNIX** nació como una alternativa más simple inspirada en MULTICS, inicialmente diseñado para un entorno de un solo usuario.
+
+Su impacto creció rápidamente debido a una característica clave: su código fuente era accesible, lo que permitió su adaptación y evolución en múltiples variantes.
+
+Entre las más importantes destacan:
+
+- **System V (AT&T)**
+- **BSD (University of California, Berkeley)**
+
+Para estandarizar la compatibilidad entre sistemas UNIX, el IEEE desarrolló el estándar:
+
+- **POSIX**, que define interfaces de programación comunes (API).
+
+---
+
+### MINIX y el nacimiento de Linux
+
+**MINIX** fue creado en 1987 como una versión simplificada de UNIX con fines educativos.
+
+Aunque limitado, tuvo un impacto enorme al inspirar el desarrollo de **Linux**, uno de los sistemas operativos más importantes de la actualidad.
+
+Hoy en día:
+
+- MINIX se utiliza en controladores de microchips Intel
+- Linux domina servidores, centros de datos y sistemas Android
