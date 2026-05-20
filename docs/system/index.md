@@ -218,3 +218,60 @@ Permite la interacción con el sistema:
 - **GUI (interfaz gráfica)**: ventanas, iconos, menús
 
 Las GUI son más amigables para usuarios, mientras que la CLI es más eficiente para administradores y desarrolladores.
+## Sistemas operativos como hobby (pasatiempo)
+
+Algunos sistemas operativos se desarrollan como proyectos personales o de afición, sin estar basados directamente en sistemas existentes y con comunidades pequeñas o muy activas.
+
+Estos proyectos suelen ser creados por desarrolladores independientes o pequeños grupos con intereses comunes.
+### Características principales
+
+Un sistema operativo “de hobby” suele:
+
+- No derivar de sistemas comerciales existentes
+- Tener pocos usuarios y desarrolladores
+- Ser experimental o educativo
+
+En muchos casos, estos proyectos nacen para hardware específico, como:
+
+- Ordenadores “homebrew”
+- Placas simples basadas en microprocesadores (ej. 6502)
+
+También pueden desarrollarse para arquitecturas modernas, ya sea desde cero o inspirándose en sistemas existentes.
+### Ejemplos conocidos
+
+Algunos sistemas operativos desarrollados como hobby o proyectos experimentales son:
+
+- **TempleOS**
+- **Syllable OS**
+## Diversidad de sistemas operativos y portabilidad
+
+Uno de los grandes retos del desarrollo de software es la **portabilidad entre sistemas operativos**.
+
+Una aplicación diseñada para un sistema concreto puede requerir modificaciones al ejecutarse en otro, debido a diferencias en:
+
+- APIs del sistema
+- Llamadas al sistema
+- Bibliotecas disponibles
+- Convenciones internas
+
+Esto genera un coste adicional de adaptación y mantenimiento.
+### Soluciones a la portabilidad
+
+Para reducir estos problemas, se utilizan varias estrategias:
+
+#### 1. Plataformas intermedias
+
+Se desarrollan aplicaciones sobre capas de abstracción como:
+
+- **Java Virtual Machine (JVM)**
+- **Qt framework**
+
+Estas plataformas actúan como intermediarios entre la aplicación y el sistema operativo.
+#### 2. Estándares de compatibilidad
+
+Otra solución es la adopción de estándares comunes, como:
+
+- **POSIX**
+- Capas de abstracción del sistema operativo (OS abstraction layers)
+
+Estos estándares facilitan que el mismo software pueda ejecutarse en múltiples sistemas con menos cambios.
