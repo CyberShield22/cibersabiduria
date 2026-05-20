@@ -25,8 +25,6 @@ El código del sistema operativo y el código de la aplicación no se ejecutan p
 
 ## Historia
 Los sistemas operativos no siempre existieron como los conocemos hoy. Su evolución ha estado directamente ligada al crecimiento del hardware, la necesidad de automatización y el acceso compartido a los recursos de computación.
-
----
 ### Los primeros sistemas (1940–1950)
 
 Las primeras computadoras de finales de los años 40 y 50 no disponían de sistemas operativos.
@@ -38,9 +36,6 @@ La programación se realizaba de forma directa sobre la máquina mediante:
 - Paneles de conexión física (plugboards)
 
 En este contexto, no existían lenguajes de programación de alto nivel ni abstracciones. El control del sistema era completamente manual, lo que hacía que cada ejecución fuera costosa y lenta.
-
----
-
 ### La era de los mainframes y los primeros sistemas de control
 
 Con la llegada del **transistor en los años 50**, comenzaron a aparecer los primeros mainframes.
@@ -57,9 +52,6 @@ Entre los sistemas más representativos de esta etapa destacan:
 - **IBSYS**
 
 Estos sistemas no eran sistemas operativos modernos, pero sentaron las bases de lo que vendría después.
-
----
-
 ### IBM System/360 y el nacimiento de la multiprogramación
 
 En la década de 1960, IBM introdujo la familia **System/360**, uno de los hitos más importantes en la historia de la computación.
@@ -79,9 +71,6 @@ Esto obligó a introducir mecanismos como:
 
 - Gestión de memoria por particiones
 - Protección entre procesos
-
----
-
 ### Tiempo compartido y MULTICS
 
 En paralelo, comenzaron a utilizarse terminales como las teleimpresoras, lo que permitió el acceso simultáneo de múltiples usuarios a un mismo sistema.
@@ -89,9 +78,6 @@ En paralelo, comenzaron a utilizarse terminales como las teleimpresoras, lo que 
 El sistema **MULTICS** fue uno de los primeros intentos de construir un sistema multiusuario a gran escala, con el objetivo de dar servicio a cientos de usuarios concurrentes.
 
 Aunque su adopción fue limitada, su diseño influyó profundamente en la evolución de los sistemas modernos y es considerado un precursor conceptual de la **computación en la nube**.
-
----
-
 ### UNIX: el punto de inflexión
 
 El sistema operativo **UNIX** nació como una alternativa más simple inspirada en MULTICS, inicialmente diseñado para un entorno de un solo usuario.
@@ -106,9 +92,6 @@ Entre las más importantes destacan:
 Para estandarizar la compatibilidad entre sistemas UNIX, el IEEE desarrolló el estándar:
 
 - **POSIX**, que define interfaces de programación comunes (API).
-
----
-
 ### MINIX y el nacimiento de Linux
 
 **MINIX** fue creado en 1987 como una versión simplificada de UNIX con fines educativos.
@@ -119,3 +102,119 @@ Hoy en día:
 
 - MINIX se utiliza en controladores de microchips Intel
 - Linux domina servidores, centros de datos y sistemas Android
+## Componentes de un sistema operativo
+Los sistemas operativos están formados por varios componentes que trabajan juntos para gestionar el hardware y permitir la ejecución de aplicaciones de forma segura y eficiente.
+### Kernel (núcleo del sistema)
+
+El **kernel** es el componente central del sistema operativo.
+
+Sus funciones principales son:
+
+- Gestionar el acceso al hardware
+- Proteger procesos y usuarios entre sí
+- Asignar memoria y recursos
+- Controlar dispositivos de entrada/salida
+
+El kernel opera en **modo privilegiado**, mientras que las aplicaciones se ejecutan en **modo usuario**, lo que permite aislar fallos y mejorar la seguridad del sistema.
+### Ejecución de programas
+
+Cuando se ejecuta un programa, el sistema operativo:
+
+- Crea un **proceso**
+- Asigna memoria y recursos
+- Carga el código en memoria
+- Establece su prioridad
+- Inicia su ejecución
+
+El programa interactúa con el hardware siempre a través del sistema operativo, nunca directamente.
+### Interrupciones
+
+Las **interrupciones** permiten al sistema operativo reaccionar a eventos de forma eficiente.
+
+Tipos principales:
+
+- **Hardware**: eventos del dispositivo (teclado, disco, red)
+- **Software**: errores o llamadas del sistema
+- **Excepciones**: división por cero, accesos inválidos
+
+Cuando ocurre una interrupción:
+
+1. Se guarda el estado del proceso actual
+2. Se ejecuta una rutina del kernel
+3. Se restaura el proceso o se cambia a otro
+
+Esto permite multitarea y respuesta en tiempo real.
+### Gestión de memoria
+
+El sistema operativo se encarga de proteger y organizar la memoria:
+
+- Evita que los procesos se interfieran entre sí
+- Detecta accesos no permitidos
+- Usa mecanismos como **paginación** y **segmentación**
+
+Si un programa accede a memoria inválida, el sistema genera una excepción y puede terminar el proceso.
+### Memoria virtual
+
+La memoria virtual permite que los programas “vean” más memoria de la que realmente existe.
+
+Esto se logra combinando:
+
+- RAM
+- Disco (swap)
+
+Beneficios:
+
+- Mejor uso de recursos
+- Mayor aislamiento entre procesos
+- Posibilidad de ejecutar programas más grandes
+### Concurrencia y procesos
+
+Los sistemas operativos modernos pueden ejecutar múltiples tareas a la vez mediante:
+
+- **Procesos**
+- **Hilos (threads)**
+
+El sistema reparte el tiempo de CPU entre tareas o las ejecuta en paralelo si hay múltiples núcleos.
+### Sistema de archivos
+
+El sistema de archivos organiza la información en:
+
+- Archivos
+- Directorios
+
+Permite:
+
+- Guardar y recuperar datos
+- Gestionar permisos
+- Optimizar acceso mediante caché
+- Proteger contra corrupción de datos
+### Entrada / salida (I/O)
+
+El sistema operativo gestiona dispositivos como:
+
+- Teclado y ratón
+- Disco duro / SSD
+- Red
+
+Métodos importantes:
+
+- **Interrupciones**: eventos por dispositivo
+- **DMA (Direct Memory Access)**: transferencia sin CPU directa
+### Seguridad
+
+La seguridad del sistema operativo se basa en:
+
+- Aislamiento de procesos
+- Control de permisos
+- Protección de memoria
+- Principio de mínimo privilegio
+
+Objetivo: garantizar confidencialidad, integridad y disponibilidad del sistema.
+### Interfaz de usuario
+
+Permite la interacción con el sistema:
+
+- **CLI (línea de comandos)**: texto
+- **GUI (interfaz gráfica)**: ventanas, iconos, menús
+
+Las GUI son más amigables para usuarios, mientras que la CLI es más eficiente para administradores y desarrolladores.
