@@ -76,8 +76,8 @@ nav:
   - Scripting: 
       - Visión general: scripting/index.md
       - Pyhton: scripting/python/index.md
-  - Operating System: system/index.md
-  - Networking: redes/index.md
+  - Sistemas Operativos: system/index.md
+  - Redes: redes/index.md
   - Cloud:     
     - Visión general: cloud/index.md
     - Fundamentos de la nube: cloud/fundamentals.md
