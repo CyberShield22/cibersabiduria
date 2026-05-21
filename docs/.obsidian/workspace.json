@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "system/windows.md",
+                "file": "system/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "windows"
+              "title": "index"
             }
           }
         ],
@@ -200,8 +200,8 @@
   },
   "active": "32cc2fa01fbc06e0",
   "lastOpenFiles": [
-    "system/linux.md",
     "system/windows.md",
+    "system/linux.md",
     "system/index.md",
     "index.md",
     "scripting/index.md",
