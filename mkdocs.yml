@@ -76,7 +76,8 @@ nav:
   - Scripting: 
     - Visión general: scripting/index.md
     - Pyhton: scripting/python/index.md
-  - Sistemas Operativos: system/index.md
+  - Sistemas Operativos:
+    - Visión general: system/index.md
     - Linux: system/linux.md
     - Windows: system/windows.md
   - Redes: redes/index.md
