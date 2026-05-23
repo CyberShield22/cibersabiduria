@@ -1,277 +1,144 @@
 # Sistemas Operativos
+
 ## ¿Qué es un sistema operativo?
-Un sistema operativo es el software esencial que gestiona los recursos de hardware y software de un ordenador y proporciona servicios básicos para el funcionamiento de las aplicaciones. Actúa como intermediario entre el usuario y la máquina, encargándose de tareas como la gestión de procesos, la memoria, los sistemas de archivos y los dispositivos. Al ocultar la complejidad del hardware, permite que los programas se ejecuten de forma estable y coherente en distintos entornos.
+
+Un sistema operativo (SO) es el software encargado de gestionar los recursos de hardware y permitir la ejecución de aplicaciones. Actúa como intermediario entre el usuario y el equipo, facilitando la comunicación con componentes como la CPU, la memoria, el disco o los dispositivos de entrada y salida.
+
+Además de ejecutar programas, el sistema operativo controla procesos, organiza archivos, administra memoria y garantiza la seguridad y estabilidad del sistema.
+
+---
+
+## Funciones principales
+
+Las funciones más importantes de un sistema operativo son:
+
+- Gestión de procesos y multitarea
+- Administración de memoria
+- Gestión del sistema de archivos
+- Control de dispositivos de entrada y salida
+- Seguridad y permisos
+- Proporcionar interfaces de usuario (CLI y GUI)
+
+Gracias a estas funciones, varias aplicaciones pueden ejecutarse simultáneamente de forma estable y segura.
+
+---
 
 ## Tipos de sistemas operativos
-### Sistemas operativos multicomputadores
-Con multiprocesadores Varias CPU comparten memoria. A multicomputadora o cluster computer tiene varias CPU, cada una de las cuales tiene su propia memoria. Se desarrollaron multicomputadoras porque los multiprocesadores grandes son difíciles de diseñar y prohibitivamente caros. Son universales en computación en la nube debido al tamaño de la máquina necesaria. Las diferentes CPU a menudo necesitan enviarse y recibir mensajes entre sí. Para garantizar un buen rendimiento, los sistemas operativos de estas máquinas deben minimizar esta copia de paquetes. Los sistemas más nuevos suelen serlo multiqueue—separar grupos de usuarios en grupos separados queues—para reducir la necesidad de copiar paquetes y admitir más usuarios simultáneos. Otra técnica es acceso remoto directo a la memoria, que permite a cada CPU acceder a la memoria perteneciente a otras CPU. Los sistemas operativos multicomputadores a menudo admiten llamadas a procedimientos remotos donde una CPU puede llamar a procedimiento en otra CPU o memoria compartida distribuida, en el que utiliza el sistema operativo virtualización para generar memoria compartida que no existe físicamente.
+
+### Sistemas de escritorio
+
+Son los utilizados en ordenadores personales y estaciones de trabajo. Están diseñados para facilitar la interacción con el usuario mediante interfaces gráficas.
+
+Ejemplos:
+
+- Windows
+- Linux
+- macOS
+
+### Sistemas de servidor
+
+Optimizados para ofrecer servicios de red, almacenamiento, virtualización o aplicaciones empresariales con alta disponibilidad y estabilidad.
+
+### Sistemas embebidos
+
+Diseñados para dispositivos específicos con recursos limitados, como routers, electrodomésticos o dispositivos IoT.
+
+### Sistemas en tiempo real (RTOS)
+
+Garantizan respuestas dentro de tiempos concretos y se utilizan en entornos industriales, aeronáuticos o médicos.
 
 ### Sistemas distribuidos
-A sistema distribuido es un grupo de distintos, en red computadoras—cada una de las cuales podría tener su propio sistema operativo y sistema de archivos. A diferencia de las multicomputadoras, pueden estar dispersas en cualquier parte del mundo. Middleware, a menudo se utiliza una capa de software adicional entre el sistema operativo y las aplicaciones para mejorar la coherencia. Aunque funciona de manera similar a un sistema operativo, no es un verdadero sistema operativo.
 
-### Incrustado
-Sistemas operativos integrados están diseñados para ser utilizados en sistemas informáticos integrados, si lo son Internet de las cosas objetos o no conectados a una red. Los sistemas integrados incluyen muchos electrodomésticos. El factor distintivo es que no cargan el software instalado por el usuario. En consecuencia, no necesitan protección entre diferentes aplicaciones, lo que permite diseños más simples. Los sistemas operativos muy pequeños pueden funcionar en menos de 10 kilobytes y los más pequeños son para tarjetas inteligentes. Los ejemplos incluyen: Linux integrado, QNX, VxWorks, y los sistemas extrapequeños DISTURBIOS y TinyOS.
+Permiten que múltiples equipos trabajen de forma coordinada compartiendo recursos y tareas a través de una red.
 
-### Tiempo real
-A sistema operativo en tiempo real es un sistema operativo que garantiza el procesamiento eventos o datos por o en un momento específico en el tiempo. Los sistemas duros en tiempo real requieren una sincronización exacta y son comunes en fabricación, aviónica, usos militares y otros usos similares. Con sistemas suaves en tiempo real, es aceptable que se pierda algún evento ocasional; esta categoría a menudo incluye sistemas de audio o multimedia, así como teléfonos inteligentes. Para que los sistemas duros en tiempo real sean lo suficientemente exactos en su sincronización, a menudo son solo una biblioteca sin protección entre aplicaciones, como por ejemplo Cos electrónico.
+### Hipervisores
 
-### Hipervisor
-A hipervisor es un sistema operativo que ejecuta un máquina virtual. La máquina virtual es una aplicación que emula hardware; en otras palabras, funciona tanto como sea posible como el hardware real para el que fue diseñado el sistema operativo. Las máquinas virtuales se pueden pausar, guardar y reanudar, lo que las hace útiles para la investigación y el desarrollo de sistemas operativos y depuración. También mejoran la portabilidad al permitir que las aplicaciones se ejecuten en una computadora incluso si no son compatibles con el sistema operativo base.
+Sistemas especializados en ejecutar máquinas virtuales y administrar entornos virtualizados.
 
-### Biblioteca
-A sistema operativo de biblioteca (libOS) es aquel en el que los servicios que proporciona un sistema operativo típico, como la red, se proporcionan en forma de bibliotecas y compuesto con una única aplicación y código de configuración para construir un unikernel: a especializado (solo se extraen de las bibliotecas los fragmentos de código absolutamente necesarios y se unen entre sí ), espacio de dirección única, imagen de máquina que se puede implementar en entornos integrados o en la nube.
+---
 
-El código del sistema operativo y el código de la aplicación no se ejecutan por separado dominios de protección (solo hay una única aplicación ejecutándose, al menos conceptualmente, por lo que no hay necesidad de evitar interferencias entre aplicaciones) y se accede a los servicios del sistema operativo mediante simples llamadas a la biblioteca (potencialmente inlining ellos basados en umbrales del compilador), sin la sobrecarga habitual de cambios de contexto, de manera similar a los sistemas operativos integrados y en tiempo real. Esta sobrecarga no es despreciable: al coste directo del cambio de modo hay que añadir la contaminación indirecta de importantes estructuras de procesador (como Cachés de CPU, el canalización de instrucciones, y así sucesivamente), lo que afecta tanto al rendimiento en modo usuario como en modo kernel.
+## Historia de los sistemas operativos
 
-## Historia
-Los sistemas operativos no siempre existieron como los conocemos hoy. Su evolución ha estado directamente ligada al crecimiento del hardware, la necesidad de automatización y el acceso compartido a los recursos de computación.
-### Los primeros sistemas (1940–1950)
+Los primeros ordenadores no utilizaban sistemas operativos. Los programas se ejecutaban directamente sobre el hardware mediante tarjetas perforadas y lenguaje máquina.
 
-Las primeras computadoras de finales de los años 40 y 50 no disponían de sistemas operativos.
+Con la aparición de los mainframes en los años 50 y 60 comenzaron a desarrollarse sistemas capaces de automatizar tareas como la carga de programas o la gestión de entrada y salida.
 
-La programación se realizaba de forma directa sobre la máquina mediante:
+Uno de los grandes hitos fue UNIX, cuyo diseño influyó profundamente en los sistemas modernos. A partir de él surgieron estándares como POSIX y sistemas derivados como BSD o Linux.
 
-- Lenguaje máquina
-- Tarjetas perforadas
-- Paneles de conexión física (plugboards)
+Actualmente, Linux domina gran parte de servidores, centros de datos, cloud computing y dispositivos Android.
 
-En este contexto, no existían lenguajes de programación de alto nivel ni abstracciones. El control del sistema era completamente manual, lo que hacía que cada ejecución fuera costosa y lenta.
-### La era de los mainframes y los primeros sistemas de control
+---
 
-Con la llegada del **transistor en los años 50**, comenzaron a aparecer los primeros mainframes.
+## Componentes principales
 
-Aunque todavía requerían operadores humanos especializados, empezaron a incluir sistemas rudimentarios encargados de automatizar tareas como:
+### Kernel
 
-- Planificación de trabajos (job scheduling)
-- Gestión básica de entrada/salida
-- Ejecución secuencial de programas
+El kernel es el núcleo del sistema operativo. Se encarga de gestionar el acceso al hardware, controlar procesos, administrar memoria y coordinar dispositivos.
 
-Entre los sistemas más representativos de esta etapa destacan:
+Es el componente más importante del sistema.
 
-- **FMS (Fortran Monitor System)**
-- **IBSYS**
+### Procesos e hilos
 
-Estos sistemas no eran sistemas operativos modernos, pero sentaron las bases de lo que vendría después.
-### IBM System/360 y el nacimiento de la multiprogramación
+Un proceso es un programa en ejecución. Los sistemas modernos permiten ejecutar múltiples procesos simultáneamente mediante multitarea.
 
-En la década de 1960, IBM introdujo la familia **System/360**, uno de los hitos más importantes en la historia de la computación.
+Los hilos (threads) permiten dividir tareas dentro de un mismo proceso para mejorar el rendimiento.
 
-Todos los modelos ejecutaban un sistema operativo común:
-
-- **OS/360**
-
-Este sistema estaba escrito principalmente en lenguaje ensamblador y llegó a tener millones de líneas de código, lo que lo hacía extremadamente complejo.
-
-A pesar de sus problemas, introdujo avances fundamentales como la **multiprogramación**, que permitía:
-
-- Ejecutar varios programas en memoria al mismo tiempo
-- Aprovechar la CPU mientras otros procesos esperaban operaciones de entrada/salida
-
-Esto obligó a introducir mecanismos como:
-
-- Gestión de memoria por particiones
-- Protección entre procesos
-### Tiempo compartido y MULTICS
-
-En paralelo, comenzaron a utilizarse terminales como las teleimpresoras, lo que permitió el acceso simultáneo de múltiples usuarios a un mismo sistema.
-
-El sistema **MULTICS** fue uno de los primeros intentos de construir un sistema multiusuario a gran escala, con el objetivo de dar servicio a cientos de usuarios concurrentes.
-
-Aunque su adopción fue limitada, su diseño influyó profundamente en la evolución de los sistemas modernos y es considerado un precursor conceptual de la **computación en la nube**.
-### UNIX: el punto de inflexión
-
-El sistema operativo **UNIX** nació como una alternativa más simple inspirada en MULTICS, inicialmente diseñado para un entorno de un solo usuario.
-
-Su impacto creció rápidamente debido a una característica clave: su código fuente era accesible, lo que permitió su adaptación y evolución en múltiples variantes.
-
-Entre las más importantes destacan:
-
-- **System V (AT&T)**
-- **BSD (University of California, Berkeley)**
-
-Para estandarizar la compatibilidad entre sistemas UNIX, el IEEE desarrolló el estándar:
-
-- **POSIX**, que define interfaces de programación comunes (API).
-### MINIX y el nacimiento de Linux
-
-**MINIX** fue creado en 1987 como una versión simplificada de UNIX con fines educativos.
-
-Aunque limitado, tuvo un impacto enorme al inspirar el desarrollo de **Linux**, uno de los sistemas operativos más importantes de la actualidad.
-
-Hoy en día:
-
-- MINIX se utiliza en controladores de microchips Intel
-- Linux domina servidores, centros de datos y sistemas Android
-## Componentes de un sistema operativo
-Los sistemas operativos están formados por varios componentes que trabajan juntos para gestionar el hardware y permitir la ejecución de aplicaciones de forma segura y eficiente.
-### Kernel (núcleo del sistema)
-
-El **kernel** es el componente central del sistema operativo.
-
-Sus funciones principales son:
-
-- Gestionar el acceso al hardware
-- Proteger procesos y usuarios entre sí
-- Asignar memoria y recursos
-- Controlar dispositivos de entrada/salida
-
-El kernel opera en **modo privilegiado**, mientras que las aplicaciones se ejecutan en **modo usuario**, lo que permite aislar fallos y mejorar la seguridad del sistema.
-### Ejecución de programas
-
-Cuando se ejecuta un programa, el sistema operativo:
-
-- Crea un **proceso**
-- Asigna memoria y recursos
-- Carga el código en memoria
-- Establece su prioridad
-- Inicia su ejecución
-
-El programa interactúa con el hardware siempre a través del sistema operativo, nunca directamente.
-### Interrupciones
-
-Las **interrupciones** permiten al sistema operativo reaccionar a eventos de forma eficiente.
-
-Tipos principales:
-
-- **Hardware**: eventos del dispositivo (teclado, disco, red)
-- **Software**: errores o llamadas del sistema
-- **Excepciones**: división por cero, accesos inválidos
-
-Cuando ocurre una interrupción:
-
-1. Se guarda el estado del proceso actual
-2. Se ejecuta una rutina del kernel
-3. Se restaura el proceso o se cambia a otro
-
-Esto permite multitarea y respuesta en tiempo real.
 ### Gestión de memoria
 
-El sistema operativo se encarga de proteger y organizar la memoria:
+El sistema operativo administra la memoria RAM y evita que los procesos interfieran entre sí.
 
-- Evita que los procesos se interfieran entre sí
-- Detecta accesos no permitidos
-- Usa mecanismos como **paginación** y **segmentación**
+También utiliza memoria virtual para ampliar la memoria disponible mediante swap o paginación.
 
-Si un programa accede a memoria inválida, el sistema genera una excepción y puede terminar el proceso.
-### Memoria virtual
-
-La memoria virtual permite que los programas “vean” más memoria de la que realmente existe.
-
-Esto se logra combinando:
-
-- RAM
-- Disco (swap)
-
-Beneficios:
-
-- Mejor uso de recursos
-- Mayor aislamiento entre procesos
-- Posibilidad de ejecutar programas más grandes
-### Concurrencia y procesos
-
-Los sistemas operativos modernos pueden ejecutar múltiples tareas a la vez mediante:
-
-- **Procesos**
-- **Hilos (threads)**
-
-El sistema reparte el tiempo de CPU entre tareas o las ejecuta en paralelo si hay múltiples núcleos.
 ### Sistema de archivos
 
-El sistema de archivos organiza la información en:
+Permite organizar y almacenar información en archivos y directorios.
 
-- Archivos
-- Directorios
+Además, controla permisos, acceso a datos y mecanismos de protección frente a errores.
 
-Permite:
+### Entrada y salida (I/O)
 
-- Guardar y recuperar datos
-- Gestionar permisos
-- Optimizar acceso mediante caché
-- Proteger contra corrupción de datos
-### Entrada / salida (I/O)
+Gestiona la comunicación con dispositivos como discos, teclados, ratones o tarjetas de red mediante controladores e interrupciones.
 
-El sistema operativo gestiona dispositivos como:
+---
 
-- Teclado y ratón
-- Disco duro / SSD
-- Red
+## Seguridad
 
-Métodos importantes:
+Los sistemas operativos modernos incorporan mecanismos de seguridad para proteger datos y procesos.
 
-- **Interrupciones**: eventos por dispositivo
-- **DMA (Direct Memory Access)**: transferencia sin CPU directa
-### Seguridad
+Entre ellos destacan:
 
-La seguridad del sistema operativo se basa en:
-
-- Aislamiento de procesos
-- Control de permisos
+- Gestión de usuarios y permisos
+- Aislamiento entre procesos
 - Protección de memoria
-- Principio de mínimo privilegio
+- Control de privilegios
+- Autenticación y auditoría
 
-Objetivo: garantizar confidencialidad, integridad y disponibilidad del sistema.
-### Interfaz de usuario
+El objetivo es garantizar la confidencialidad, integridad y disponibilidad del sistema.
 
-Permite la interacción con el sistema:
+---
 
-- **CLI (línea de comandos)**: texto
-- **GUI (interfaz gráfica)**: ventanas, iconos, menús
+## Interfaz de usuario
 
-Las GUI son más amigables para usuarios, mientras que la CLI es más eficiente para administradores y desarrolladores.
-## Sistemas operativos como hobby (pasatiempo)
+Los sistemas operativos pueden ofrecer:
 
-Algunos sistemas operativos se desarrollan como proyectos personales o de afición, sin estar basados directamente en sistemas existentes y con comunidades pequeñas o muy activas.
+### CLI (Command Line Interface)
 
-Estos proyectos suelen ser creados por desarrolladores independientes o pequeños grupos con intereses comunes.
-### Características principales
+Interacción mediante comandos de texto. Muy utilizada en administración de sistemas y automatización.
 
-Un sistema operativo “de hobby” suele:
+### GUI (Graphical User Interface)
 
-- No derivar de sistemas comerciales existentes
-- Tener pocos usuarios y desarrolladores
-- Ser experimental o educativo
+Interfaz gráfica basada en ventanas, iconos y menús, más sencilla para usuarios generales.
 
-En muchos casos, estos proyectos nacen para hardware específico, como:
+---
 
-- Ordenadores “homebrew”
-- Placas simples basadas en microprocesadores (ej. 6502)
+## Portabilidad y compatibilidad
 
-También pueden desarrollarse para arquitecturas modernas, ya sea desde cero o inspirándose en sistemas existentes.
-### Ejemplos conocidos
+No todos los sistemas operativos utilizan las mismas APIs o llamadas al sistema, por lo que una aplicación puede requerir adaptaciones para funcionar en diferentes plataformas.
 
-Algunos sistemas operativos desarrollados como hobby o proyectos experimentales son:
+Para mejorar la compatibilidad se utilizan estándares como:
 
-- **TempleOS**
-- **Syllable OS**
-## Diversidad de sistemas operativos y portabilidad
+- POSIX
+- JVM (Java Virtual Machine)
+- Frameworks multiplataforma como Qt
 
-Uno de los grandes retos del desarrollo de software es la **portabilidad entre sistemas operativos**.
-
-Una aplicación diseñada para un sistema concreto puede requerir modificaciones al ejecutarse en otro, debido a diferencias en:
-
-- APIs del sistema
-- Llamadas al sistema
-- Bibliotecas disponibles
-- Convenciones internas
-
-Esto genera un coste adicional de adaptación y mantenimiento.
-### Soluciones a la portabilidad
-
-Para reducir estos problemas, se utilizan varias estrategias:
-
-#### 1. Plataformas intermedias
-
-Se desarrollan aplicaciones sobre capas de abstracción como:
-
-- **Java Virtual Machine (JVM)**
-- **Qt framework**
-
-Estas plataformas actúan como intermediarios entre la aplicación y el sistema operativo.
-#### 2. Estándares de compatibilidad
-
-Otra solución es la adopción de estándares comunes, como:
-
-- **POSIX**
-- Capas de abstracción del sistema operativo (OS abstraction layers)
-
-Estos estándares facilitan que el mismo software pueda ejecutarse en múltiples sistemas con menos cambios.
+Estas tecnologías permiten desarrollar software portable entre distintos sistemas.
