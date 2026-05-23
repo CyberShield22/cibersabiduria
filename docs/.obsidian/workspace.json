@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "system/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -180,13 +180,14 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "68d8f168b7b53e4b",
+  "active": "8f4f4d09e8272fed",
   "lastOpenFiles": [
+    "system/linux.md",
+    "index.md",
     "inicio",
     "IR/wazuh.md",
     "tags.md",
     "system/windows.md",
-    "system/linux.md",
     "system/index.md",
     "system",
     "scripting/python/index.md",
@@ -195,7 +196,6 @@
     "scripting",
     "redes/index.md",
     "redes",
-    "index.md",
     "cloud/terraform/assets/providers_cloud.png",
     "cloud/terraform/assets/hashicorp.png",
     "cloud/azure/assets/Pasted image 20260120190228.png",
@@ -211,7 +211,6 @@
     "cloud/azure",
     "cloud/gcp",
     "cloud/fundamentals.md",
-    "cloud/aws",
     "ciberseguridad/index.md",
     "blog/posts/drafts/ten_years.md",
     "blog/posts/drafts/sysadmin_day.md",
