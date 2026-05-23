@@ -73,7 +73,7 @@ markdown_extensions:
 
 nav:
   - Inicio: 
-    - inicio/index.md
+    - index.md
   - Scripting: 
     - scripting/index.md
     - Pyhton: scripting/python/index.md
