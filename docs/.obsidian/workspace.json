@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "system/arkime.md",
+                "file": "system/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "arkime"
+              "title": "index"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "5abafc53e79f2a16",
@@ -182,9 +182,10 @@
   },
   "active": "8f4f4d09e8272fed",
   "lastOpenFiles": [
-    "system/index.md",
     "system/arkime.md",
     "system/linux.md",
+    "system/index.md",
+    "Sin título.base",
     "index.md",
     "inicio",
     "IR/wazuh.md",
@@ -210,7 +211,6 @@
     "cloud/terraform",
     "cloud/index.md",
     "cloud/azure",
-    "cloud/gcp",
     "cloud/fundamentals.md",
     "ciberseguridad/index.md",
     "blog/posts/drafts/ten_years.md",
@@ -220,7 +220,6 @@
     "blog/posts/drafts/may_4th.md",
     "blog/posts/myfirst.md",
     "blog/posts/draft.md",
-    "blog/author/team.md",
     "img/ADestructura1.png",
     "img/ADDS.webp",
     "img/actualizaciones.png"

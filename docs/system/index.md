@@ -1,3 +1,6 @@
+---
+title: Sistemas Operativos
+---
 # Sistemas Operativos
 
 ## ¿Qué es un sistema operativo?
