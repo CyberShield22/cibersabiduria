@@ -1,5 +1,6 @@
 ---
 title: Sistemas Operativos
+description: Apuntes, prácticas, ejercicio del curso de especialización de ciberseguridad. Arkime, blue team, seguridad devensiva, análisis de red, escáner de red, bastionado de redes y sistemas.
 ---
 # Sistemas Operativos
 

@@ -24,9 +24,11 @@ Y así sucesivamente.
 
 ### Arkime
 
-> [!QUOTE] "Cita de [Arkime](https://arkime.com/)"
-> >     Augment your current security infrastructure to store and index network traffic in standard PCAP format.
-> >     Arkime is not meant to replace Intrusion Detection Systems (IDS) but instead provides more visibility. 
+### Arkime
+
+!!!quote "Cita de [Arkime](https://arkime.com/)"
+    Augment your current security infrastructure to store and index network traffic in standard PCAP format.
+    Arkime is not meant to replace Intrusion Detection Systems (IDS) but instead provides more visibility.
 
 ### Command and control (C2)
 
