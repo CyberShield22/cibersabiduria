@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "system/linux.md",
+                "file": "system/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "linux"
+              "title": "index"
             }
           }
         ]
@@ -182,9 +182,9 @@
   },
   "active": "8f4f4d09e8272fed",
   "lastOpenFiles": [
-    "system/index2.md",
-    "system/linux.md",
     "system/arkime.md",
+    "system/index.md",
+    "system/linux.md",
     "system/windows.md",
     "Sin título.base",
     "index.md",
